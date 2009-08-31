@@ -5,3 +5,13 @@
     <li>{{ player.first_name }} {{ player.last_name }}</li>
 {% endfor %}
 </ul>
+<br />
+<form action="add_player/" method="post">
+    <label for="first_name">First Name</label><input type="text" name="first_name">
+    <label for="last_name">Last Name<input type="text" name="last_name"><br />
+    <label for="number">Jersey #</label><input type="text" name="number">
+    <label for="height">Height</label><input type="text" name="height"><br />
+    <input type="submit" value="Add">
+</form>
+<br />
+<a href="/roster">Back</a>
