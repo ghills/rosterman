@@ -1,0 +1,7 @@
+<h3>{{ team.name }}</h3>
+<h4>{{ team.city }}</h4>
+<ul>
+{% for player in team.player_set.all %}
+    <li>{{ player.first_name }} {{ player.last_name }}</li>
+{% endfor %}
+</ul>

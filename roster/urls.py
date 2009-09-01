@@ -1,8 +1,9 @@
 from django.conf.urls.defaults import *
 
-urlpatterns = patterns('',
+urlpatterns = patterns('rosterman.roster.views',
     # Example:
-    (r'^roster/', include('rosterman.roster.urls')),
+    (r'^$', 'index'),
+    (r'^(?P<team_id>\d+)/$', 'detail'),
 
     # Uncomment the admin/doc line below and add 'django.contrib.admindocs' 
     # to INSTALLED_APPS to enable admin documentation:
